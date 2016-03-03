@@ -27,9 +27,19 @@
 		  </div>
 		  <div class="row">
 		    <div class="col-sm-8">
-			    <div class="content">
-		   			<h2>$response</h2>
-			    </div>
+			<form method="GET" action="/order/sell">
+				<input class="form-control" placeholder="شناسه" name="id" type="text"/><br/>
+				<input class="form-control" placeholder="نماد" name="instrument" type="text"/><br/>
+				<input class="form-control" placeholder="قیمت پیشنهادی" name="price" type="text"/><br/>
+				<input class="form-control" placeholder="تعداد سهم" name="quantity" type="text"/><br/>
+				<select name="type">
+					<option>نوع درخواست</option>
+				    <option value="GTC">GTC</option>
+				    <option value="MPO">MPO</option>
+				    <option value="IOC">IOC</option>
+			    </select>
+				<input type="submit" value="ثبت درخواست"/>
+			</form>
 		    </div>
 		    <div class="col-sm-4">
 			    <div id="navbar">

@@ -27,17 +27,20 @@
 		  </div>
 		  <div class="row">
 		    <div class="col-sm-8">
-			    <div class="content">
-		   			<h2>$response</h2>
-			    </div>
+				<form method="GET" action="/customer/add">
+					<input class="form-control" placeholder="شناسه" name="id" type="text"/><br/>
+					<input class="form-control" placeholder="نام" name="name" type="text"/><br/>
+					<input class="form-control" placeholder="نام خانوادگی" name="family" type="text"/><br/>
+					<input type="submit" value="ثبت نام"/>
+				</form>
 		    </div>
 		    <div class="col-sm-4">
 			    <div id="navbar">
 			      	<ul>
 					  <li><a href="/docs/register.html">عضویت</a></li>
-					  <li><a href="/docs/deposit.html">واریز</a></li>
-					  <li><a href="/docs/withdraw.html">برداشت</a></li>
-					  <li><a href="/docs/unknown.html">وضعیت بازار</a></li>
+					  <li><a href="/docs/register.html">واریز</a></li>
+					  <li><a href="/docs/register.html">برداشت</a></li>
+					  <li><a href="/docs/register.html">وضعیت بازار</a></li>
 					  <li><a href="/docs/sell.html">فروش سهام</a></li>
 					  <li><a href="/docs/buy.html">خرید سهام</a></li>
 					</ul>

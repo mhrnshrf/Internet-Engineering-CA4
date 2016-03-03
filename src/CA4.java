@@ -146,6 +146,7 @@ class Buy extends ServiceHandler{
 public class CA4 {
     public static void main(String[] args) throws IOException {
         HttpServer server = HttpServer.create(new InetSocketAddress(9091), 0);
+        server.createContext("/docs", new FileHandler());
         server.createContext("/customer/add", new Add());
         server.createContext("/customer/deposit", new Deposit());
         server.createContext("/customer/withdraw", new Withdraw());
