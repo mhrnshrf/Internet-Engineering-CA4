@@ -8,11 +8,15 @@ h1 {
     margin-left: 20px;
 }
 
+#navbar{
+    position: fixed;
+    overflow: auto;
+}
 
 #top{
-	color:white;
-	background-color:#660066;
-	padding:10px
+  color:white;
+  background-color:#660066;
+  padding:10px;
 }
 
 
@@ -21,6 +25,8 @@ ul {
     margin: 0;
     padding: 0;
     width: 100%;
+    height: 100%;
+
     background-color: #f1f1f1;
 }
 
@@ -100,22 +106,13 @@ a:hover {
   margin:0 auto;
 }*/
 
-#logo {
-    position:relative;
-    height:100px;
-    width:100px;
-    max-width:100%;
-    margin:0 auto;
-}
-
 img{
-    position:absolute;
-    max-width:100%;
-    left:0;
-    -webkit-transition: opacity 1s ease-in-out;
-    -moz-transition: opacity 1s ease-in-out;
-    -o-transition: opacity 1s ease-in-out;
-    transition: opacity 1s ease-in-out;
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
 
 }
 
@@ -123,6 +120,32 @@ img{
   opacity:0;
 }
 
-.form-req{
-    width: 50%;
+
+.content{
+  margin-right:200px;
+}
+
+table.content {
+    border-collapse: collapse;
+    width: 100%;
+    direction: rtl;
+}
+
+th, td {
+    text-align: right;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #A366A3;
+    color: white;
+}
+
+#buy-table{
+  float: left;
+}
+#sell-table{
+  float: right;
 }
